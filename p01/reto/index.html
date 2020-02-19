@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tienda Coregaming</title><meta charset="utf-8">
+		<script type="text/javascript">
+			function comprobarDatosFormulario(){
+				var comprobacion = false;
+				var expReg = /[\s\S]{3}/;		
+				var nombre = document.getElementById('NombreFormUsuario').value;
+                var juego = document.getElementById('NombreJuego').value;
+                var mail = document.getElementById('Nombremail').value;
+                var contra = document.getElementById('Nombrecontra').value;
+                var dir = document.getElementById('Nombredir').value;
+                var tel = document.getElementById('Nombretel').value;
+                var tarj = document.getElementById('Nombretarj').value;
+                var fecha = document.getElementById('Nombrefecha').value;
+
+				if(!expReg.test(nombre) ){
+					alert('falta nombre');
+					return false;
+				}
+                if(!expReg.test(mail)){
+					alert('Ingrese su e-mail');
+					return false;
+				}
+                if(!expReg.test(contra)){
+					alert('Ingrese su contraseña');
+					return false;
+				}
+                if(!expReg.test(dir)){
+					alert('Ingrese su direccion');
+					return false;
+				}
+                if(!expReg.test(tel)){
+					alert('Ingrese su numero de telefono');
+					return false;
+				}
+                if(!expReg.test(tarj)){
+					alert('Ingrese su numero de tarjeta');
+					return false;
+				}
+                if(!expReg.test(fecha)){
+					alert('Ingrese su fecha de expracion');
+					return false;
+				}
+
+                else{
+				
+				}
+        
+				
+			}
+		</script>
+	</head>
+	<body>
+        <style>
+			body {background-color: coral;}
+			.main{
+				width: 80%;
+                padding: 12px 5px;
+                margin: 10px 0;
+                box-sizing: border-box;
+				box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+			}
+			  input[type=text] {
+                width: 15%;
+                padding: 12px 5px;
+                margin: 10px 0;
+                box-sizing: border-box;
+				box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+				
+              }
+			  input[type=email] {
+                width: 15%;
+                padding: 12px 5px;
+                margin: 10px 0;
+                box-sizing: border-box;
+				box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+              }
+			  input[type=password] {
+                width: 15%;
+                padding: 12px 5px;
+                margin: 10px 0;
+                box-sizing: border-box;
+				box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+              }
+			  input[type=tel] {
+                width: 15%;
+                padding: 12px 5px;
+                margin: 10px 0;
+                box-sizing: border-box;
+				box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+              }
+			  input[type=number] {
+                width: 15%;
+                padding: 12px 5px;
+                margin: 10px 0;
+                box-sizing: border-box;
+				box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+              }
+			  input[type=date] {
+                width: 15%;
+                padding: 12px 5px;
+                margin: 10px 0;
+                box-sizing: border-box;
+				box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+              }
+            
+			</style>
+			<div class="main">
+
+		<form name ="formularioUsuario" action= "exito.php" method="get" onsubmit="return comprobarDatosFormulario()">
+			<h2>Tienda core gaming</h2>
+            <label>Nombre:<input id="NombreFormUsuario" type="text" name="nombre" /></label><br/>
+            <label>Juego: <input id="NombreJuego" type="text" name="juego" /></label><br/>
+            <label>E-mail:<input id="Nombremail" type="email" name="mail" /></label><br/>
+            <label>Contraseña:<input id="Nombrecontra" type="password" name="contra" /></label><br/>
+            <label>Direccion: <input id="Nombredir" type="text" name="dir" /></label><br/>
+            <label>Telefono: <input id="Nombretel" type="tel" name="tel" /></label><br/>
+            <label>Numero de la tarjeta: <input id="Nombretarj" type="number" name="tarj" /></label><br/>
+            <label>Fecha de expiracion <input id="Nombrefecha" type="date" name="fecha" /></label><br/>
+
+
+
+
+			<label><input id ="botonEnvio1" type="submit" value="Enviar"></label>
+		</form>
+		</div>
+	</body>
+</html>

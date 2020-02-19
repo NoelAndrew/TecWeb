@@ -1,0 +1,50 @@
+
+.1#td { width:125.9pt;border:none;background:#000000;
+  mso-background-themecolor:accent5;mso-background-themetint:63;padding:0cm 5.4pt 0cm 5.4pt}
+
+body {
+	background-color: #EAEAEA;
+}
+
+* {
+ padding: 0cm 6pt;
+ font-family: "Century Gothic","sans-serif";
+ font-size: 13.0pt;
+ color: #000000;
+ font-weight: bold;
+}
+
+select, input {
+ padding: 0px;
+ width: 300px;
+}
+
+tr.even td {
+ background: #EAEAEA;
+}
+
+tr.last td {
+ border-bottom: solid #4BACC6 1.0pt;
+}
+
+tr.first td {
+ border-top: solid #4BACC6 1.0pt;
+ border-bottom: solid #4BACC6 1.0pt;
+}
+
+input[type=submit] {
+	background: url('button_search.png') no-repeat;
+	width: 176px;
+	height: 40px;
+	padding-top: 2px;
+	border: none;
+}
+
+textarea {
+ font-family: "Arial","sans-serif";
+ font-size: 7.0pt;
+ color: #FFFFFF;
+ background: #000000;
+ font-weight: normal;
+}
+
