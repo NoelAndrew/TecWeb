@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CatalogoVOD>
+  <Cuenta>
+      <Correo email="nepe@gmail.com"></Correo>
+      <Perfiles>
+          <Perfil usuario="Gardo" idioma="Español"/>
+          <Perfil usuario="Noel" idioma="Ingles"/>
+      </Perfiles>
+  </Cuenta>  
+  <Contenido>
+      <Peliculas>
+          <Genero Nombre="Terror"/>
+          <Titulo>Las practicas de PHP</Titulo>
+          <Titlo>La Tesis</Titlo>
+          <Genero Nombre="Comedia"/>
+          <Titulo>Mi Cardex</Titulo>
+          <Titulo>Acabo en diciembre</Titulo>
+      </Peliculas>
+      <Programas>
+          <Genero Nombre="Sitcom"/>
+          <Titulo>Friends</Titulo>
+          <Titlo>Brooklin 99</Titlo>
+          <Genero Nombre="Terror"/>
+          <Titulo>Sabrina</Titulo>
+          <Titulo>Hush</Titulo> 
+      </Programas>
+  </Contenido>
+</CatalogoVOD>
