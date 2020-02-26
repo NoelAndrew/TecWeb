@@ -11,7 +11,7 @@
       <Peliculas>
           <Genero Nombre="Terror"/>
           <Titulo>Las practicas de PHP</Titulo>
-          <Titlo>La Tesis</Titlo>
+          <Titulo>La Tesis</Titulo>
           <Genero Nombre="Comedia"/>
           <Titulo>Mi Cardex</Titulo>
           <Titulo>Acabo en diciembre</Titulo>
